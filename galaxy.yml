@@ -22,7 +22,7 @@ authors:
 
 ### OPTIONAL but strongly recommended
 # A short summary description of the collection
-description: Ansible Collection for common linux tasks like package installation
+description: Ansible Collection for common linux tasks like packages installation
 
 # Either a single license or a list of licenses for content inside of a collection. Ansible Galaxy currently only
 # accepts L(SPDX,https://spdx.org/licenses/) licenses. This key is mutually exclusive with 'license_file'
@@ -40,7 +40,7 @@ tags:
 # L(specifiers,https://python-semanticversion.readthedocs.io/en/latest/#requirement-specification). Multiple version
 # range specifiers can be set and are separated by ','
 dependencies:
-  "community.general": ">=8.0.2"
+  "community.general": ">=8.6.0"
 
 # The URL of the originating SCM repository
 repository: https://github.com/roles-ansible/ansible_collection_linux.git

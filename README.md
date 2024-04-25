@@ -46,13 +46,13 @@ collections:
 ```
 
 ## Include roles in your playbook
-Example Playbook using the l3d.linux.package role:
+Example Playbook using the l3d.linux.packages role:
 ```yaml
 ---
 - name: "Install NTP Server from collection l3d.linux"
   hosts: ntp.example.com
   roles:
-    - {role: l3d.linux.ntp, tags: ntp}
+    - {role: l3d.linux.packages, tags: ntp}
   vars:
 ```
 
