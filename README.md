@@ -1,4 +1,4 @@
-[![collection l3d.linux](https://ansible.l3d.space/svg/l3d.linux_ansible-collection_collection.svg)](https://galaxy.ansible.com/ui/repo/published/l3d.linux/)
+[![collection l3d.linux](https://ansible.l3d.space/svg/l3d.linux_ansible-collection_collection.svg)](https://galaxy.ansible.com/ui/repo/published/l3d/linux/)
 [![Maintainance](https://ansible.l3d.space/svg/l3d.linux_maintainance_collection.svg)](https://ansible.l3d.space/#l3d.linux)
 [![License](https://ansible.l3d.space/svg/l3d.linux_license_collection.svg)](LICENSE)
 
