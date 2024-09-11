@@ -14,7 +14,7 @@ This is the Ansible Collection ``l3d.linux``. A collection to to common linux ta
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.linux:1.1.4
+ansible-galaxy collection install l3d.linux:1.1.5
 ```
 
 Remember you can to Upgrade to the latest version of the l3d.linux collection using the ``--upgrade`` parameter:
@@ -43,18 +43,18 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.linux
-    version: ">=1.1.4"
+    version: ">=1.1.5"
 ```
 
 ## Include roles in your playbook
-Example Playbook using the l3d.linux.packages role:
+Example Playbook using the l3d.linux.packages and l3d.linux.resolvconf role:
 ```yaml
 ---
 - name: "Install NTP Server from collection l3d.linux"
   hosts: ntp.example.com
   roles:
-    - {role: l3d.linux.packages, tags: ntp}
-    - {role: l3d.linux.packages, tags: ntp}
+    - {role: l3d.linux.packages, tags: pakages}
+    - {role: l3d.linux.resolvconf, tags: resolvconf}
   vars:
     packages__install_advanced: true
     packages__install_python: true
