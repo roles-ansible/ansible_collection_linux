@@ -1,3 +1,6 @@
 [submodule "roles/packages"]
 	path = roles/packages
 	url = https://github.com/roles-ansible/ansible_role_packages.git
+[submodule "roles/resolvconf"]
+	path = roles/resolvconf
+	url = https://github.com/roles-ansible/ansible_role_resolvconf.git

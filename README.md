@@ -9,11 +9,12 @@ This is the Ansible Collection ``l3d.linux``. A collection to to common linux ta
 
 ## Ansible Roles in l3d.linux
 - [![l3d.linux.packages](https://ansible.l3d.space/svg/l3d.linux.packages_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_packages.git) -  Ansible role to install some base packages on your linux systems
+- [![l3d.linux.resolvconf](https://ansible.l3d.space/svg/l3d.linux.resolvconf_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_resolvconf.git) -  Ansible role to manage the ``/etc/resolv.conf`` file.
 
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.linux:1.1.3
+ansible-galaxy collection install l3d.linux:1.1.4
 ```
 
 Remember you can to Upgrade to the latest version of the l3d.linux collection using the ``--upgrade`` parameter:
@@ -42,7 +43,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.linux
-    version: ">=1.1.3"
+    version: ">=1.1.4"
 ```
 
 ## Include roles in your playbook
@@ -53,14 +54,14 @@ Example Playbook using the l3d.linux.packages role:
   hosts: ntp.example.com
   roles:
     - {role: l3d.linux.packages, tags: ntp}
+    - {role: l3d.linux.packages, tags: ntp}
   vars:
+    packages__install_advanced: true
+    packages__install_python: true
+    packages__install_cli: true
+    packages__install_desktop: true
+    submodules_versioncheck: true
 ```
 
 ## Requirements
 The roles in this collection using the ``community.general`` ansible Collections.
-
-### Example Requirements Installation:
-```bash
-# galaxy requirements
-ansible-galaxy install -r requirements.yml --upgrade
-```
