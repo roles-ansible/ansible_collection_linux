@@ -4,3 +4,6 @@
 [submodule "roles/resolvconf"]
 	path = roles/resolvconf
 	url = https://github.com/roles-ansible/ansible_role_resolvconf.git
+[submodule "roles/librewolf"]
+	path = roles/librewolf
+	url = https://github.com/roles-ansible/ansible_role_librewolf.git
