@@ -51,11 +51,12 @@ collections:
 Example Playbook using the l3d.linux.packages and l3d.linux.resolvconf role:
 ```yaml
 ---
-- name: "Install NTP Server from collection l3d.linux"
-  hosts: ntp.example.com
+- name: "Install NTP and librewolf from collection l3d.linux and configure resolve.conf"
+  hosts: desktop.example.com
   roles:
     - {role: l3d.linux.packages, tags: pakages}
     - {role: l3d.linux.resolvconf, tags: resolvconf}
+    - {role: l3d.linux.librewolf, tags: librewolf}
   vars:
     packages__install_advanced: true
     packages__install_python: true
