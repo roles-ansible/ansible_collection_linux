@@ -14,9 +14,11 @@ Wrapper for extrepo - [manpages.ubuntu.com](https://manpages.ubuntu.com/manpages
   - required: `true`
   - choices: `search`, `enable`, `disable`, `update`
 + **key**: Used for searching repos
-  - type `str`
-  - `required` false
+  - type: `str`
+  - required: `false`
 + **repository**: select a repository for an action
+  - type: `str`
+  - required: `false`
 
 ## Examples for l3d.linux.extrepo
 
