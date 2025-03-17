@@ -12,6 +12,9 @@ This is the Ansible Collection ``l3d.linux``. A collection to to common linux ta
 - [![l3d.linux.resolvconf](https://ansible.l3d.space/svg/l3d.linux.resolvconf_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_resolvconf.git) -  Ansible role to manage the ``/etc/resolv.conf`` file.
 - [![l3d.linux.librewolf](https://ansible.l3d.space/svg/l3d.linux.librewolf_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_resolvconf.git) -  Ansible role to install librewolf.
 
+## Ansible Modules in l3d.linux
+- [l3d.linux.extrepo](plugins/modules/EXTREPO.md) - Wrapper for extrepo
+
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
