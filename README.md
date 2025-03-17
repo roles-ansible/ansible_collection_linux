@@ -18,7 +18,7 @@ This is the Ansible Collection ``l3d.linux``. A collection to to common linux ta
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.linux:1.1.7
+ansible-galaxy collection install l3d.linux:1.1.8
 ```
 
 Remember you can to Upgrade to the latest version of the l3d.linux collection using the ``--upgrade`` parameter:
@@ -47,7 +47,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.linux
-    version: ">=1.1.7"
+    version: ">=1.1.8"
 ```
 
 ## Include roles in your playbook

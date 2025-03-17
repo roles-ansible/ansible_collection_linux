@@ -1,4 +1,8 @@
 ---
 exclude_paths:
   - .github/
-  - roles/packages/.github
+  - roles/*/.github
+  - .ansible/
+
+skip_list:
+  - var-naming[no-role-prefix]

@@ -1,0 +1,3 @@
+---
+swappiness__vm_swappiness: '5'
+submodules_versioncheck: false

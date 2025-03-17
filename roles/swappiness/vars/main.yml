@@ -1,0 +1,4 @@
+---
+# versionscheck
+playbook_version_number: 5
+playbook_version_path: 'l3d.linux.swappiness.version'

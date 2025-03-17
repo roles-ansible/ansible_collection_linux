@@ -1,0 +1,13 @@
+---
+- name: Run simple versionscheck (optional)
+  ansible.builtin.include_tasks:
+    file: 'versioncheck.yml'
+  when: submodules_versioncheck | bool
+
+- name: "Set vm.swappiness to {{ swappiness__vm_swappiness }}"
+  become: true
+  ansible.posix.sysctl:
+    name: 'vm.swappiness'
+    value: "{{ swappiness__vm_swappiness }}"
+    state: present
+    reload: true
