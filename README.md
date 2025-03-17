@@ -13,12 +13,12 @@ This is the Ansible Collection ``l3d.linux``. A collection to to common linux ta
 - [![l3d.linux.librewolf](https://ansible.l3d.space/svg/l3d.linux.librewolf_ansible-role.svg)](https://github.com/roles-ansible/ansible_role_resolvconf.git) -  Ansible role to install librewolf.
 
 ## Ansible Modules in l3d.linux
-- [l3d.linux.extrepo](plugins/modules/EXTREPO.md) - Wrapper for extrepo
+- [l3d.linux.extrepo](https://github.com/roles-ansible/ansible_collection_linux/blob/main/plugins/modules/EXTREPO.md) - Wrapper for extrepo
 
 ## Using this Collection
 You can install the collection using ansible-galaxy by running:
 ```bash
-ansible-galaxy collection install l3d.linux:1.1.8
+ansible-galaxy collection install l3d.linux:1.2.1
 ```
 
 Remember you can to Upgrade to the latest version of the l3d.linux collection using the ``--upgrade`` parameter:
@@ -47,7 +47,7 @@ You can also list a collection in ``requirements.yml``:
 ---
 collections:
   - name: l3d.linux
-    version: ">=1.1.8"
+    version: ">=1.2.1"
 ```
 
 ## Include roles in your playbook
